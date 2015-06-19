@@ -1,0 +1,143 @@
+/* Begin PBXBuildFile section */
+/* Begin PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+/* Begin PBXNativeTarget section */
+/* Begin PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+/* Begin PBXShellScriptBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+/* Begin PBXVariantGroup section */
+/* Begin XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+/* Begin XCVersionGroup section */
+
+
+BuildFile Section里边所有的文件，fileRef都指向了PBXFileReference
+
+PBXFileReference指明了所在的位置，但是是相对位置，上一级路径，根据UUID，在PBXGroup中查找
+
+
+
+
+
+1
+/* Begin PBXBuildFile section */
+		10C18C351A81FE8E0029425F /* AutomaticOperateLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C18C331A81FE8E0029425F /* AutomaticOperateLogic.m */; };
+/* End PBXBuildFile section */
+
+2
+/* Begin PBXFileReference section */
+		10C18C331A81FE8E0029425F /* AutomaticOperateLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomaticOperateLogic.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+3
+/* Begin PBXGroup section */
+		10C18C311A81FE8E0029425F /* AutomaticOperateLogic */ = {
+			isa = PBXGroup;
+			children = (
+				10C18C321A81FE8E0029425F /* AutomaticOperateLogic.h */,
+				10C18C331A81FE8E0029425F /* AutomaticOperateLogic.m */,
+			);
+			path = AutomaticOperateLogic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+4
+/* Begin PBXGroup section */
+		0935FD781A440BDB004EE0B5 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				10C18C311A81FE8E0029425F /* AutomaticOperateLogic */,
+				099D12661A4A6D32002B6253 /* LocalRequestLogic */,
+				09A85E2A1A9EA66700A4F03A /* OperateLightLogic */,
+				B8AC62131A76228A00A3241F /* RemotePostLogic */,
+				10C18C2E1A81FE8E0029425F /* RefreshLogic */,
+				0935FD791A440BDB004EE0B5 /* SignInLogic */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+5
+/* Begin PBXGroup section */
+		093C69151A2D68200036C120 /* com.eading.wireless */ = {
+			isa = PBXGroup;
+			children = (
+				093C691A1A2D68200036C120 /* AppDelegate.h */,
+				093C691B1A2D68200036C120 /* AppDelegate.m */,
+				10C1AD411A42B8130013F0D0 /* Defines.h */,
+				0935FD781A440BDB004EE0B5 /* BusinessLogic */,
+				09AEDAC61A37E563005DD722 /* Component */,
+				10DC29871A36F9CC009C3D6A /* Constants */,
+				09C60A891A30187A00DCCAFC /* CustomKit */,
+				10E480921A89E53300050899 /* CoreData */,
+				09C60A921A3018CE00DCCAFC /* InputValidator */,
+				09AEDAB01A36A518005DD722 /* Manager */,
+				093C693F1A2D685E0036C120 /* Model */,
+				10DC296E1A36EBB2009C3D6A /* Resources */,
+				0947B44F1A3E67C100124392 /* Store */,
+				10DC29831A36F974009C3D6A /* Utilities */,
+				093C69A11A2EE3840036C120 /* ViewControllers */,
+				093C69231A2D68200036C120 /* Images.xcassets */,
+				093C69251A2D68200036C120 /* LaunchScreen.xib */,
+				093C69161A2D68200036C120 /* Supporting Files */,
+			);
+			path = com.eading.wireless;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+6
+/* Begin PBXGroup section */
+		093C690A1A2D68200036C120 = {
+			isa = PBXGroup;
+			children = (
+				093C69151A2D68200036C120 /* com.eading.wireless */,
+				093C69141A2D68200036C120 /* Products */,
+				FE465692276F3217220DF9D4 /* Pods */,
+				D181BA0178CE507375D30527 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+7
+/* Begin PBXProject section */
+		093C690B1A2D68200036C120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					093C69121A2D68200036C120 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 28QYT2AWP3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 093C690E1A2D68200036C120 /* Build configuration list for PBXProject "com.eading.wireless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 093C690A1A2D68200036C120;
+			productRefGroup = 093C69141A2D68200036C120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093C69121A2D68200036C120 /* com.eading.wireless */,
+			);
+		};
+/* End PBXProject section */
+
